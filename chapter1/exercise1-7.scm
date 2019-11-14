@@ -28,6 +28,16 @@
 ; Also, in real computers, arithmetic operations are almost always performed with limited precision. This makes our test
 ; inadequate for very large numbers. Explain these statements, with examples showing how the test fails for small and large numbers.
 
+; Notes: after doing some reading on newtons method, It seems that there are a lot of problems with it. One being that the initial
+; guess is quite poor but this can be overcome using calculus. There is also a linear convergance rate if the multiplicity is greater
+; than one.
+
+; Convergence rate: The speed at which a convergent sequense approcahes it's limit
+; Convergent sequence: A sequence is convergent if a limit exists. In functions like ours
+;   we have to set our own limit or a function with a limit of infinity, will keep running infinitly.
+; Linear convergence: Linear convergence is not optimal, we would like our function to be superlinear or logarithmic.
+;   These convergence rates will approach the limit faster than a linear or sublinear rate.
+
 ; Small numbers:
 ; There are a few reasons why our funtion may not be suitable for small numbers. The first being that the limits that we put on our result
 ; in the `good-enough?` can make our estimate pretty inacurate.
