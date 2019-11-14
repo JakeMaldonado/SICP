@@ -16,9 +16,13 @@
 (define (sqrt-iter guess x)
   (new-if (good-enough? guess x)
           guess
-          (sqrt-iter (improve fuess x)
+          (sqrt-iter (improve guess x)
                      x)))
 
 ;What happens when Alyssa attempts to use this to compute square roots?
 ;Explain.
+
+; Hypothesis:
+; I think that this will cause a recursive loop, since both conditions will be called using the new method.
+; so even if the guess is good enough, the new if will keep running the function.
 
