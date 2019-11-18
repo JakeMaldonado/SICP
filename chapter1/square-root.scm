@@ -1,3 +1,4 @@
+; some notes from lecture 1.A;
 ; Newtons method:
 ;   - orginally developed by Heron of Alexandria in the first century A.D.
 ;   - find the square root by averaging `y` with `x/y`
@@ -57,4 +58,5 @@
       (try (improve guess))))
   (try 1))
 
+; side note for combinations, You should write these functions so that the person reading it does not need to know if that function is a primitive in the language or not.
 ; we will need to bring in our other math functions in order for square and abs to work
