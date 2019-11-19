@@ -51,12 +51,12 @@
   (define (improve guess) (average guess (/ x guess)))
   (define (good-enough? guess)
     (< (abs (- (square guess) x))
-       .001))
+       0.001))
   (define (try guess)
     (if (good-enough? guess)
       guess
       (try (improve guess))))
-  (try 1))
+  (try 1.0))
 
 ; side note for combinations, You should write these functions so that the person reading it does not need to know if that function is a primitive in the language or not.
 ; we will need to bring in our other math functions in order for square and abs to work
