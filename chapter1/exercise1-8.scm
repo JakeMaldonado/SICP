@@ -3,6 +3,8 @@
 
 ; use this formula to implement a cube-root procedure analogous to the square root procedure.
 ; alalogous: similar
+; note: the type of recursion we are doing here is a `tail call` since we arent calling the outer function again
+;   this is not to be used in modern JS currently since its not supported in a lot of browsers and not in node.
 (define (cube-root x)
   (define (improve guess prev)
     (/ (+ (/ prev
